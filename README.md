@@ -27,7 +27,7 @@
 ---
 
 ## 📂 Project Structure
-
+`
 FirstDynamicWebA/
 ├── src/
 │ └── com/
@@ -40,9 +40,7 @@ FirstDynamicWebA/
 ├── .project
 └── README.md
 
-php-template
-Copy
-Edit
+`
 
 ---
 
