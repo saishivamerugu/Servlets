@@ -25,5 +25,6 @@ public class HelloServlet extends HttpServlet {
  What is the relation between the servlet and the html 
  We have to forward the servlet to the html file 
  we have a method called request.getRequestDispatchet("where we mention our html page");
- rp -> request Dispatcher -> 
+ rp -> request Dispatcher 
  */
+
