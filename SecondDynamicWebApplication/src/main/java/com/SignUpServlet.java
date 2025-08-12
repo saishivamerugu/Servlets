@@ -15,8 +15,9 @@ public class SignUpServlet extends HttpServlet {
         String email = req.getParameter("userEmailId");
         String password = req.getParameter("userPassword");
 
-        resp.setContentType("text/html"); // 🔧 You should add this
+        resp.setContentType("text/html"); 
         PrintWriter writer = resp.getWriter();
         writer.append("Hi welcome " + email);
     }
 }
+
