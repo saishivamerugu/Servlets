@@ -99,4 +99,3 @@ FirstDynamicWebA/
    ```
    http://localhost:8080/FirstDynamicWebA/hello
    ```
-
