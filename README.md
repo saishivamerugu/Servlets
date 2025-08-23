@@ -1,4 +1,4 @@
-# Java Servlets Beginner Project  
+# Java Servlets 
 
 A simple dynamic web application built with **Jakarta Servlet API**.  
 This project demonstrates the basics of how to handle HTTP requests and responses using servlets.  
