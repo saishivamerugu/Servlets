@@ -1,54 +1,58 @@
-# Servlets
- beginner-friendly Java Servlet project that demonstrates how to handle HTTP requests and responses using the **Jakarta Servlet API**.
+# Java Servlets 
 
----
+A simple dynamic web application built with **Jakarta Servlet API**.  
+This project demonstrates the basics of how to handle HTTP requests and responses using servlets.  
 
-## 🚀 What I Learned
+***
 
-- **What is a Servlet?**  
-  - Java program running on a server to create dynamic web content.
+## What You Will Learn  
 
-- **Servlet Lifecycle**  
-  - `init()` → Initializes the servlet (runs once).  
-  - `service()` → Handles requests (GET, POST, etc.).  
-  - `destroy()` → Cleans up before shutting down.
+- What is a Servlet  
+  A Servlet is a Java program that runs on a server to generate dynamic web content.  
 
-- **HTTP Methods**  
-  - `doGet()` → Handles GET requests (URL parameters).  
-  - `doPost()` → Handles POST requests (form data).
+- Servlet Lifecycle  
+  - init() → Runs once when the servlet is first loaded  
+  - service() → Handles every request  
+  - destroy() → Cleans resources before the servlet is unloaded  
 
-- **Deployment Descriptor (`web.xml`)**  
-  - Registers servlets and maps URLs to servlet classes.
+- HTTP Methods  
+  - doGet() → Handles GET requests with query parameters  
+  - doPost() → Handles POST requests like form submissions  
 
-- **Request & Response Handling**  
-  - **HttpServletRequest** → Retrieve form data, parameters, headers.  
-  - **HttpServletResponse** → Send HTML/text responses to clients.
+- Deployment Descriptor (web.xml)  
+  - Registers servlets  
+  - Maps URL patterns to servlet classes  
 
----
+- Request and Response Handling  
+  - HttpServletRequest → Reads parameters, headers, and form data  
+  - HttpServletResponse → Sends responses such as HTML or plain text  
 
-## 📂 Project Structure
-`
+***
+
+## Project Structure  
+
+```
 FirstDynamicWebA/
 ├── src/
-│ └── com/
-│ └── FirstHibernateProject.java
+│   └── com/
+│       └── FirstHibernateProject.java     (Servlet class)
 ├── WebContent/
-│ ├── WEB-INF/
-│ │ └── web.xml
-│ └── index.html
+│   ├── WEB-INF/
+│   │   └── web.xml                       (Deployment descriptor)
+│   └── index.html                        (Frontend)
 ├── .classpath
 ├── .project
 └── README.md
+```
 
-`
+***
 
----
+## web.xml Configuration  
 
-## ⚙️ `web.xml` Configuration
+```xml
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-         id="WebApp_ID"
          version="6.0">
 
     <display-name>FirstDynamicWebA</display-name>
@@ -64,26 +68,36 @@ FirstDynamicWebA/
     </servlet-mapping>
 
 </web-app>
-🖥 How It Works
-The servlet is registered in web.xml with a unique name (hello) and linked to the Java class (com.FirstHibernateProject).
+```
 
-A URL pattern (/hello) is mapped to the servlet.
+***
 
-When the browser requests /hello, the servlet executes and returns the HTTP response.
+## How It Works  
 
-🔧 Technologies Used
-Java 17+
+1. The servlet is registered in web.xml with the name "hello".  
+2. It is linked to the Java class `com.FirstHibernateProject`.  
+3. The URL pattern `/hello` is mapped to the servlet.  
+4. When you open `http://localhost:8080/FirstDynamicWebA/hello` in your browser, the servlet executes and sends back a response.  
 
-Jakarta Servlet API (6.0)
+***
 
-Apache Tomcat 10+
+## Technologies Used  
 
-Eclipse IDE
+- Java 17 or above  
+- Jakarta Servlet API 6.0  
+- Apache Tomcat 10 or above  
+- Eclipse IDE  
 
-📌 How to Run
-Import into Eclipse as a Dynamic Web Project.
+***
 
-Add Tomcat 10+ to the server configuration.
+## How to Run  
 
-Run on server
-http://localhost:8080/FirstDynamicWebA/hello
+1. Import the project into Eclipse as a Dynamic Web Project.  
+2. Configure Apache Tomcat 10 or above in Eclipse.  
+3. Right-click on the project and select "Run on Server".  
+4. Open the URL:  
+   ```
+   http://localhost:8080/FirstDynamicWebA/hello
+   ```
+
+***
