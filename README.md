@@ -1,4 +1,4 @@
-# Java Servlets 
+# Java Servlets Beginner Project  
 
 A simple dynamic web application built with **Jakarta Servlet API**.  
 This project demonstrates the basics of how to handle HTTP requests and responses using servlets.  
@@ -28,6 +28,7 @@ This project demonstrates the basics of how to handle HTTP requests and response
   - HttpServletResponse → Sends responses such as HTML or plain text  
 
 ***
+
 ## Project Structure  
 
 ```
@@ -99,4 +100,3 @@ FirstDynamicWebA/
    http://localhost:8080/FirstDynamicWebA/hello
    ```
 
-***
