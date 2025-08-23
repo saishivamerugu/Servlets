@@ -28,7 +28,6 @@ This project demonstrates the basics of how to handle HTTP requests and response
   - HttpServletResponse → Sends responses such as HTML or plain text  
 
 ***
-
 ## Project Structure  
 
 ```
