@@ -2,7 +2,7 @@
 
 A simple dynamic web application built with **Jakarta Servlet API**.  
 This project demonstrates the basics of how to handle HTTP requests and responses using servlets.  
-
+You can Refer my notes : https://shrub-fan-577.notion.site/Servlets-3650b182b608802aa7a6f8fd16024276
 ***
 
 ## What You Will Learn  
